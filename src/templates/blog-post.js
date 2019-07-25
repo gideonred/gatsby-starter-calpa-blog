@@ -31,6 +31,39 @@ const bgWhite = { padding: '10px 30px', background: 'white' };
 const isBrowser = typeof window !== 'undefined';
 const Gitalk = isBrowser ? require('gitalk') : undefined;
 
+
+const footerStyle = {
+  backgroundColor: 'gray',
+  fontSize: '20px',
+  color: 'white',
+  borderTop: '1px solid #E7E7E7',
+  textAlign: 'center',
+  padding: '20px',
+  position: 'fixed',
+  left: '0',
+  bottom: '0',
+  height: '60px',
+  width: '100%',
+};
+
+const linkStyle = {
+  backgroundColor: 'gray',
+  fontSize: '20px',
+  color: 'white',
+};
+
+
+const phantomStyle = {
+  display: 'block',
+  padding: '20px',
+  height: '60px',
+  width: '100%',
+};
+
+const tableStyle = {
+  width: '100%',
+};
+
 class BlogPost extends Component {
   constructor(props) {
     super(props);
@@ -40,13 +73,6 @@ class BlogPost extends Component {
   componentDidMount() {
     const { frontmatter, id: graphqlId } = this.data.content.edges[0].node;
     const { title, id } = frontmatter;
-
-    const GitTalkInstance = new Gitalk({
-      ...gitalk,
-      title,
-      id: id || graphqlId,
-    });
-    GitTalkInstance.render('gitalk-container');
   }
 
   render() {
@@ -58,12 +84,17 @@ class BlogPost extends Component {
 
     const { slug } = fields;
 
-    const { date, headerImage, title } = frontmatter;
+    const {
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3,
+    } = frontmatter;
 
     return (
       <div className="row post order-2">
         <Header
           img={headerImage || 'https://i.imgur.com/M795H8A.jpg'}
+          slideImage1={slideImage1}
+          slideImage2={slideImage2}
+          slideImage3={slideImage3}
           title={title}
           authorName={name}
           authorImage={iconUrl}
@@ -71,8 +102,17 @@ class BlogPost extends Component {
         />
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
-
-          <div id="gitalk-container" />
+        </div>
+        <div style={phantomStyle} />
+        <div style={footerStyle}>
+          <div id="footerId">
+            <table style={tableStyle}>
+              <tr>
+                <td><div style={linkStyle}><a href={walklink}>Walk</a></div></td>
+                <td><div style={linkStyle}><a href={listenlink}>Listen</a></div></td>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <SEO
@@ -99,6 +139,11 @@ export const pageQuery = graphql`
       slug
       date
       headerImage
+      walklink
+      listenlink
+      slideImage1
+      slideImage2
+      slideImage3
     }
   }
 

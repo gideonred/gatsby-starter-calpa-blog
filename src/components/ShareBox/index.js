@@ -15,11 +15,10 @@ const CommentButton = () => (
       paddingLeft: '0.15rem',
     }}
     href="#gitalk-container"
-    onClick={() =>
-      ReactGA.event({
-        category: 'User',
-        action: 'Goto Comment Box',
-      })
+    onClick={() => ReactGA.event({
+      category: 'User',
+      action: 'Goto Comment Box',
+    })
     }
   >
     <FontAwesomeIcon icon={['far', 'comment']} />
@@ -27,41 +26,33 @@ const CommentButton = () => (
 );
 
 const ShareBox = ({ url, hasCommentBox }) => (
-  <div className="m-share-box">
-    <a
-      href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
-      title=""
-      className="share-button"
-      onClick={() =>
-        ReactGA.event({
-          category: 'Share',
-          action: 'Facebook Share',
-        })
-      }
-    >
-      <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-    </a>
-
-    {/* 視覺置中 => 稍微往上偏移 */}
-    {hasCommentBox && <CommentButton />}
-
-    <a
-      className="share-button"
-      href="#header"
-      onClick={() => {
-        ReactGA.event({
-          category: 'User',
-          action: 'Scroll to Top',
-        });
-      }}
-      style={{
-        lineHeight: '1.7rem',
-        paddingLeft: '0.1rem',
-      }}
-    >
-      <FontAwesomeIcon icon={['fas', 'chevron-up']} />
-    </a>
-  </div>
+  <nav id="m-navbar" className="navbar-night">
+    <div className="container">
+      <button
+        type="button"
+        className="navbar-brand btn btn-default"
+        onClick={() => {
+          ReactGA.event({
+            category: 'User',
+            action: 'Click navbar logo',
+          });
+          gotoPage('/');
+        }}
+      >
+        Lost in Translation
+      </button>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      />
+      <div
+        className="collapse navbar-collapse flex-row-reverse"
+        id="navbarSupportedContent"
+      />
+    </div>
+  </nav>
 );
 
 ShareBox.propTypes = {
