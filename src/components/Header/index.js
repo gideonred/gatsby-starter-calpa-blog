@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.scss';
 import { Slide } from 'react-slideshow-image';
-
-import JueJin from '../JueJin';
-
-import { parseImgur } from '../../api/images';
+import Tag from '../Tag';
 
 const properties = {
   duration: 5000,
@@ -49,6 +46,7 @@ const Header = ({
   authorName,
   jueJinPostLink,
   jueJinLikeIconLink,
+  tags = [],
 }) => (
   <div className="col-12 header" style={{ padding: 0 }} id="header">
     <div className="slide-container">
@@ -57,6 +55,11 @@ const Header = ({
         slideImage2={`${slideImage2}`}
         slideImage3={`${slideImage3}`}
       />
+    </div>
+    <div className="stats">
+      {tags.map(name => (
+        <Tag name={name} key={name} />
+      ))}
     </div>
   </div>
 );
@@ -69,6 +72,7 @@ Header.propTypes = {
   authorImage: PropTypes.string,
   jueJinPostLink: PropTypes.string,
   jueJinLikeIconLink: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
 };
 
 Header.defaultProps = {
@@ -78,6 +82,7 @@ Header.defaultProps = {
   authorImage: '',
   jueJinPostLink: '',
   jueJinLikeIconLink: '',
+  tags: [],
 };
 
 export default Header;
