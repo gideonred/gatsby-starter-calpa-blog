@@ -21,26 +21,19 @@ $open-sans: "Open Sans", sans-serif; // clear-fix mixin
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   }
 
-  .wrapper {
-    background-position: center;
-    @media (min-width: 576px) {
-      min-height: 15rem;
+  .title {
+    margin-top: 20px;
+  }
+  
+  .content {
+    background-color: $white;
+
+    .title {
+      color: $light-blue;
     }
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 5.7rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    transition: all 0.5s ease 0s;
 
-    &:hover {
-      opacity: 0.7;
-
-      .data {
-        transform: translateY(-1em);
-        transition: transform 0.3s;
-      }
+    p {
+      color: $black;
     }
   }
 
@@ -62,8 +55,27 @@ $open-sans: "Open Sans", sans-serif; // clear-fix mixin
     }
   }
 
-  .title {
-    margin-top: 20px;
+  .wrapper {
+    background-position: center;
+    @media (min-width: 576px) {
+      min-height: 15rem;
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 12rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      opacity: 0.7;
+
+      .data {
+        transform: translateY(-1em);
+        transition: transform 0.3s;
+      }
+    }
   }
 
   .date {
@@ -77,15 +89,4 @@ $open-sans: "Open Sans", sans-serif; // clear-fix mixin
     }
   }
 
-  .content {
-    background-color: $white;
-
-    .title {
-      color: $light-blue;
-    }
-
-    p {
-      color: $black;
-    }
-  }
 }

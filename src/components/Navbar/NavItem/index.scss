@@ -1,7 +1,7 @@
 @import "../../../styles/hover.scss";
 
 .nav-btn {
-  @extend %hover;
+  //@extend %hover;
   .navbar-nav & {
     color: $light-blue;
   }

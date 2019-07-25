@@ -58,6 +58,13 @@ const Header = ({
         marginTop: -58,
       }}
     />
+    <div className="slide-container">
+      <Slideshow
+        slideImage1={`${slideImage1}`}
+        slideImage2={`${slideImage2}`}
+        slideImage3={`${slideImage3}`}
+      />
+    </div>
     <div>
       {title && <h1 className="u-title">{title}</h1>}
       {subTitle && (

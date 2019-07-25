@@ -38,15 +38,15 @@ const Card = ({
       )}
       <div className="data">
         <div className="content">
+          <Link to={url} href={url}>
+            <h4 className="title">{title}</h4>
+          </Link>
+          <p>{description}</p>
           <div className="stats">
             {tags.map(name => (
               <Tag name={name} key={name} />
             ))}
           </div>
-          <Link to={url} href={url}>
-            <h4 className="title">{title}</h4>
-          </Link>
-          <p>{description}</p>
         </div>
       </div>
     </div>

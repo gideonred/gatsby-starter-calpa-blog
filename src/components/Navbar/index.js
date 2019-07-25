@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import ReactGA from 'react-ga';
 
-import GithubCorner from '../GithubCorner';
+// import GithubCorner from '../GithubCorner';
 
 import NavItem from './NavItem';
 import { gotoPage } from '../../api/url';
@@ -44,7 +44,7 @@ const Navbar = () => (
         <FontAwesomeIcon icon={faBars} />
       </button>
       <div
-        className="collapse navbar-collapse flex-row-reverse"
+        className="navbar"
         id="navbarSupportedContent"
       >
         <ul className="navbar-nav mr-2">
