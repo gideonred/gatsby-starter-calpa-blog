@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-id: c192eaba9fefc632acf87ed636593475
+id: VitalyBridge
 title: Vitaly's Bridge
-slug: /2018/05/01/about-calpa-liu/
+slug: /2018/05/01/vitalybridge/
 date: 2018-05-01T03:48:03.125Z
 description: get psyched for an outdoor concert
 headerImage: https://i.imgur.com/PXc1Na1.jpg
