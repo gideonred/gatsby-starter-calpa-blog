@@ -51,44 +51,12 @@ const Header = ({
   jueJinLikeIconLink,
 }) => (
   <div className="col-12 header" style={{ padding: 0 }} id="header">
-    <div
-      className="img-container"
-      style={{
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(${img})`,
-        marginTop: -58,
-      }}
-    />
     <div className="slide-container">
       <Slideshow
         slideImage1={`${slideImage1}`}
         slideImage2={`${slideImage2}`}
         slideImage3={`${slideImage3}`}
       />
-    </div>
-    <div>
-      {title && <h1 className="u-title">{title}</h1>}
-      {subTitle && (
-        <div className="u-subtitle">
-          <div className="m-left">
-            {authorImage && (
-              <img
-                src={parseImgur(authorImage, 'small-square')}
-                className="author-image"
-                alt={authorName}
-              />
-            )}
-            <span className="author-name">{authorName}</span>
-          </div>
-          <span className="text">{subTitle}</span>
-          {jueJinPostLink
-            && jueJinLikeIconLink && (
-              <JueJin
-                jueJinPostLink={jueJinPostLink}
-                jueJinLikeIconLink={jueJinLikeIconLink}
-              />
-          )}
-        </div>
-      )}
     </div>
   </div>
 );

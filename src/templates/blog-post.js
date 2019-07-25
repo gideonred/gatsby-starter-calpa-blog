@@ -103,7 +103,6 @@ class BlogPost extends Component {
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
         </div>
-        <div style={phantomStyle} />
         <div style={footerStyle}>
           <div id="footerId">
             <table style={tableStyle}>
