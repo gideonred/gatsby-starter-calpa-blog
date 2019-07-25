@@ -105,6 +105,11 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Header Image", name: "headerImage", widget: "string" }
+      - { label: "Walk Link", name: "walklink", widget: "string" }
+      - { label: "Listen Link", name: "listenlink", widget: "string" }
+      - { label: "Slide Image 1", name: "slideImage1", widget: "string" }
+      - { label: "Slide Image 2", name: "slideImage2", widget: "string" }
+      - { label: "Slide Image 3", name: "slideImage3", widget: "string" }
       - {
           label: "Template Key",
           hint: "如果你不知道是什麼模板的話，請輸入 blog-post",
