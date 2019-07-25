@@ -2,7 +2,6 @@
 templateKey: blog-post
 id: unbothered
 title: Unbothered
-id: unbothered
 slug: /2018/05/01/unbothered/
 date: 2018-05-01T03:48:03.125Z
 description: Walk with confidence
