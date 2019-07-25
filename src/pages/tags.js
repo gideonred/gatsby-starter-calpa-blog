@@ -34,7 +34,6 @@ const TagPage = ({ data }) => {
           margin: 15,
         }}
       >
-        <Sidebar />
 
         <div className="col order-2">
           {tags.map(item => (

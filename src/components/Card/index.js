@@ -21,7 +21,6 @@ const CardHeader = ({ url, image, backgroundColor }) => (
 
 const Card = ({
   title,
-  date,
   url,
   headerImage,
   headerBackgroundColor,
@@ -40,7 +39,6 @@ const Card = ({
       <div className="data">
         <div className="content">
           <div className="stats">
-            <span className="date">{date.split('T')[0]}</span>
             {tags.map(name => (
               <Tag name={name} key={name} />
             ))}
@@ -49,9 +47,6 @@ const Card = ({
             <h4 className="title">{title}</h4>
           </Link>
           <p>{description}</p>
-          <Link to={url} href={url}>
-            ....繼續閱讀全文內容
-          </Link>
         </div>
       </div>
     </div>
@@ -60,7 +55,6 @@ const Card = ({
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
   url: PropTypes.string.isRequired,
   headerImage: PropTypes.string,
   headerBackgroundColor: PropTypes.string,
@@ -73,7 +67,6 @@ CardHeader.propTypes = Card.propTypes;
 Card.defaultProps = {
   headerImage: '',
   tags: [],
-  date: '',
   headerBackgroundColor: '',
 };
 

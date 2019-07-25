@@ -16,7 +16,6 @@ const TagPage = ({ data, pageContext }) => {
           margin: 15,
         }}
       >
-        <Sidebar />
 
         <div className="col-xl-10 col-lg-7 col-md-12 col-xs-12 order-2">
           <div
