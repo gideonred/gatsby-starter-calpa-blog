@@ -5,7 +5,7 @@ title: Vitaly's Bridge
 slug: /2018/05/01/vitalybridge/
 date: 2018-05-01T03:48:03.125Z
 description: get psyched for an outdoor concert
-headerImage: https://i.imgur.com/PXc1Na1.jpg
+headerImage: https://i.imgur.com/WIqTKbv.jpg
 walklink: https://goo.gl/maps/vPfcJBoP3BTPQitz8
 listenlink: https://open.spotify.com/playlist/6CS7owkndpPcbyxxNKQDbL?si=J6Uwe84IRK2Hid8m74b4lQ
 slideImage1: https://i.imgur.com/jGVIHo1.png
