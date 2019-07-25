@@ -37,8 +37,16 @@
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
     {
+      "href": "/guestbook/",
+      "title": "留言簿"
+    },
+    {
       "href": "/tags/",
       "title": "Tags"
+    },
+    {
+      "href": "/2018/05/01/about-calpa-liu/",
+      "title": "關於作者"
     }
   ],
   "redirectors": [
