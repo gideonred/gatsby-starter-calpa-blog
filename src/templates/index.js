@@ -48,7 +48,11 @@ const Page = ({ pageContext, location }) => {
         }}
       >
         <div className="col-xl-6 col-lg-7 col-md-12 col-xs-12 order-1">
+<<<<<<< HEAD
           <video id="background-video" loop autoPlay muted playsInline>
+=======
+          <video id="background-video" height="200" loop autoPlay muted playsInline>
+>>>>>>> 6509c67009c245d06a8745a81ad888ef00b446ee
             <source src="https://hackathon-tatb-videos.s3.amazonaws.com/IMG_0329+(1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
           </video>
