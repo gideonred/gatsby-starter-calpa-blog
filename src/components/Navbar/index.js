@@ -33,7 +33,7 @@ const Navbar = () => (
           gotoPage('/');
         }}
       >
-        Lost in Translation
+        Ampathy
       </button>
       <button
         className="navbar-toggler"
