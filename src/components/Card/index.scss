@@ -27,7 +27,8 @@ $open-sans: "Open Sans", sans-serif; // clear-fix mixin
   
   .content {
     background-color: $white;
-
+    margin-top: 1px;
+    margin-bottom: 1px;
     .title {
       color: $light-blue;
     }
@@ -48,6 +49,7 @@ $open-sans: "Open Sans", sans-serif; // clear-fix mixin
 
       // Tags, Date
       .stats {
+        padding-top: 3px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
