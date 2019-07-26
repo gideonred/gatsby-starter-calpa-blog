@@ -14,7 +14,7 @@ slideImage1: https://i.imgur.com/lYTn403.jpg
 slideImage2: https://i.imgur.com/57lIgFM.jpg
 slideImage3: https://i.imgur.com/lokxg5x.
 slidecaption1: Rose tinted glasses not included
-slidecaption2: Those? Well, once does want a hint of color
+slidecaption2: Those? Well, one does want a hint of color
 slidecaption3: ha HA!
 tags:
   - unbothered
