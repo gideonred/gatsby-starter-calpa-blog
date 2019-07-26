@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 id: VitalyBridge
-title: Vitaly's Bridge
+title: Sender's Bridge
 slug: /2018/05/01/vitalybridge/
 date: 2018-05-01T03:48:03.125Z
 description: get psyched for an outdoor concert
@@ -20,6 +20,6 @@ tags:
   - focus
 ---
 
-## Vitaly's Bridge
+## Sender's Bridge
 
 walking across the brooklyn bridge to see a band at the south street seaport is my favorite part of the weekend...i get to see my city from a place of beauty and feel connected to the music. 
