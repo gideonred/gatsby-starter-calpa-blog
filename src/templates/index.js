@@ -52,10 +52,16 @@ const Page = ({ pageContext, location }) => {
             <source src="https://hackathon-tatb-videos.s3.amazonaws.com/IMG_0329+(1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
           </video>
-          <div className="intro"> Welcome to <b>Ampathy</b>! You're pretty busy going from point A to point B, aren't ya? <br/>
-Take time out. Pick a path that captures the mood you're in, 
+          <div className="intro">
+            {' '}
+Welcome to
+            <b>Ampathy</b>
+! You're pretty busy going from point A to point B, aren't ya?
+            <br />
+Take time out. Pick a path that captures the mood you're in,
 or the mood you WANT to be in, then load up a curated playlist
-to help you on your journey!</div>
+to help you on your journey!
+          </div>
         </div>
         <div className="col-xl-6 col-lg-7 col-md-12 col-xs-12 order-2">
           {group.map(({ node }) => (
