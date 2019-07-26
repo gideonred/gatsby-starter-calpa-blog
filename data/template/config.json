@@ -1,21 +1,21 @@
 {
-  "url": "https://calpa.me",
+  "url": "https://ampathy.life",
   "meta": {
     "favicon": "https://i.imgur.com/EZD6ZOX.png",
     "keyword": "calpa, blog, JavaScript",
-    "description": "Calpa 的技術博客，開發日常，以及遇到的坑",
+    "description": "Ampathy",
     "theme_color": "#384f7c",
     "google_site_verification": "riZBcestky7i9xY__A-5J-2EE65T75X1u-zgbss37Io"
   },
   "name": "calpa",
   "about": "/2018/05/01/about-calpa-liu/",
-  "email": "calpaliu@gmail.com",
+  "email": "gideon@twobulls.com",
   "stats": {
     "image": "https://i.imgur.com/VjBWiSt.png",
     "title": "過去三十日數據",
     "description": "過去三十日數據"
   },
-  "title": "Calpa 的技術博客",
+  "title": "Ampathy",
   "gitalk": {
     "repo": "calpa.github.io",
     "admin": ["calpa"],
