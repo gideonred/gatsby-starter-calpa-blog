@@ -13,14 +13,14 @@ listenlinkembed: https://open.spotify.com/embed/playlist/3mM7kAlfo1myP3opl0b8aI
 slideImage1: https://i.imgur.com/ANlyNmy.jpg
 slideImage2: https://i.imgur.com/TasttWg.jpg
 slideImage3: https://i.imgur.com/x5JZCz3.jpg
-slidecaption1: hi
-slidecaption2: hiowdy
-slidecaption3: hello
+slidecaption1: spa day necessity
+slidecaption2: beach day fun
+slidecaption3: stay hydrated!
 tags:
   - chill 
   - stayhydrated 
   - recharge 
-  - metime 
+  - nostress 
 ---
 
 ## Chill Time

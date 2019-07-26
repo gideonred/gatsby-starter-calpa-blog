@@ -13,11 +13,14 @@ listenlinkembed: https://open.spotify.com/embed/playlist/6CS7owkndpPcbyxxNKQDbL?
 slideImage1: https://i.imgur.com/jGVIHo1.png
 slideImage2: https://i.imgur.com/a1t0TRQ.jpg
 slideImage3: https://i.imgur.com/MMTdlTP.jpg
+slidecaption1: I like bridges
+slidecaption2: night time bridges
+slidecaption3: I can lift 10% of bridges
 tags:
   - happy
   - metal
-  - aggro
-  - focus
+  - nostress
+  - chill
 ---
 
 ## Sender's Bridge

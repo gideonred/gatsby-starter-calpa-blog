@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.scss';
 import { Slide } from 'react-slideshow-image';
-import Tag from '../Tag';
 import slide from 'react-slideshow-image/lib/components/slideshow/slide';
+import Tag from '../Tag';
 
 const properties = {
   duration: 5000,
@@ -16,7 +16,9 @@ const properties = {
   },
 };
 
-const Slideshow = ({ slideImage1, slideImage2, slideImage3, slidecaption1, slidecaption2, slidecaption3 }) => (
+const Slideshow = ({
+  slideImage1, slideImage2, slideImage3, slidecaption1, slidecaption2, slidecaption3,
+}) => (
   <Slide {...properties}>
     <div className="each-slide">
       <div style={{ backgroundImage: `url(${slideImage1})` }}>
@@ -72,7 +74,7 @@ const Header = ({
       {tags.map(name => (
         <Tag name={name} key={name} />
       ))}
-      
+
     </div>
   </div>
 );

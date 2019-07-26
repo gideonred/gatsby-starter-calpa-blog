@@ -48,18 +48,13 @@ const Page = ({ pageContext, location }) => {
         }}
       >
         <div className="col-xl-6 col-lg-7 col-md-12 col-xs-12 order-1">
-<<<<<<< HEAD
           <video id="background-video" loop autoPlay muted playsInline>
-=======
-          <video id="background-video" height="200" loop autoPlay muted playsInline>
->>>>>>> 43610f57372e3ebe0a800b3272bb275c550109b4
             <source src="https://hackathon-tatb-videos.s3.amazonaws.com/IMG_0329+(1).mp4" type="video/mp4" />
           Your browser does not support the video tag.
           </video>
           <div className="intro">
             {' '}
-Welcome to
-            <b>Ampathy</b>
+Welcome to <b> Ampathy</b>
 ! You're pretty busy going from point A to point B, aren't ya?
             <br />
 Take time out. Pick a path that captures the mood you're in,

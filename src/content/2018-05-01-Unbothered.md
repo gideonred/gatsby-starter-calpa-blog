@@ -12,7 +12,10 @@ listenlink: https://open.spotify.com/playlist/74d7DCjEjyXmk4E7tGQlQX
 listenlinkembed: https://open.spotify.com/embed/playlist/74d7DCjEjyXmk4E7tGQlQX
 slideImage1: https://i.imgur.com/lYTn403.jpg
 slideImage2: https://i.imgur.com/57lIgFM.jpg
-slideImage3: https://i.imgur.com/lokxg5x.jpg
+slideImage3: https://i.imgur.com/lokxg5x.
+slidecaption1: Rose tinted glasses not included
+slidecaption2: Those? Well, once does want a hint of color
+slidecaption3: ha HA!
 tags:
   - unbothered
   - joy
