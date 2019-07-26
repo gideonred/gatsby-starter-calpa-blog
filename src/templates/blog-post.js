@@ -86,7 +86,7 @@ class BlogPost extends Component {
     const { slug } = fields;
 
     const {
-      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags,
     } = frontmatter;
 
     return (
