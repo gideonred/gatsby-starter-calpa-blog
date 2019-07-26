@@ -13,6 +13,7 @@ import ExternalLink from '../components/ExternalLink';
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
 import SEO from '../components/SEO';
+import Tag from '../components/Tag';
 
 import Header from '../components/Header';
 // import TableOfContent from '../components/TableOfContent';
@@ -85,7 +86,7 @@ class BlogPost extends Component {
     const { slug } = fields;
 
     const {
-      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3,
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags
     } = frontmatter;
 
     return (
@@ -100,7 +101,12 @@ class BlogPost extends Component {
           authorImage={iconUrl}
           subTitle={parseChineseDate(date)}
         />
-        <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
+        <div className="stats">
+          {tags.map(name => (
+            <Tag name={name} key={name} />
+          ))}
+        </div>
+        <div className="content">
           <Content post={html} />
         </div>
         <div style={footerStyle}>
@@ -143,6 +149,7 @@ export const pageQuery = graphql`
       slideImage1
       slideImage2
       slideImage3
+      tags
     }
   }
 

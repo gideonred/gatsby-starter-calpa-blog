@@ -56,6 +56,9 @@ const Header = ({
         slideImage3={`${slideImage3}`}
       />
     </div>
+    <div className="title">
+      { title }
+    </div>
     <div className="stats">
       {tags.map(name => (
         <Tag name={name} key={name} />

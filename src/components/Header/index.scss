@@ -1,22 +1,28 @@
+.title {}
 .header-tag {
   float: left;
   height: 26px;
   line-height: 24px;
   position: relative;
   font-size: 14px;
-  margin: 5px 20px;
-  padding: 0 10px 0 12px;
-  background: #0089e0;
-  color: #fff;
+  padding: 0 5px 0 5px;
+  background:rgba($color: #efefef, $alpha: .0);
+  color: #498a94;
   text-decoration: none;
   border-radius: 0 4px 4px 0;
+  
+  span {
+    color: #498a94;
+    margin-left: inherit;
+    padding-left: inherit;
+    margin-top: inherit;
+    font-size: 5px;
+    position: relative;
+    top: -3px;
+  }
 
   &:hover {
-    $color: #e4e4e4;
-    background: $color;
-    &:before {
-      border-color: transparent $color transparent transparent;
-    }
+    color: #940115;
   }
 }
 

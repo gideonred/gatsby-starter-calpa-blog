@@ -24,3 +24,18 @@
     max-width: 100%;
   }
 }
+
+.stats {
+  background: white;
+  width: 100%;
+  .seperator:last-child {
+    .header-tag {
+    span {
+    display: none;
+    }
+  }
+  }
+}
+.header {
+  background: white;
+}

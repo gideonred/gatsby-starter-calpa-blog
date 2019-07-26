@@ -1,5 +1,10 @@
 @import "../styles/colors";
 
+.title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
 .post {
   @media screen and (max-width: 990px) {
     padding: 5px 25px;
@@ -7,19 +12,14 @@
   border-radius: 2px;
 
   .content {
-    padding-bottom: 15px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-
-    @media screen and (min-width: 990px) {
-      margin-left: 1.5rem;
-    }
-    margin-right: auto;
+    width: 100%;
 
     a {
-      color: $pink;
+      color: #000000;
 
       &:hover {
-        color: $pink;
+        color: $white;
         text-decoration: none;
       }
     }
@@ -31,6 +31,7 @@
     }
 
     h2 {
+      display: none;
       font-weight: 600;
     }
 
@@ -52,10 +53,10 @@
   
   
   a {
-    color: $white;
+    color: #498a94;
+    font-size: 9pt;
 
     &:hover {
-      color: $white;
       text-decoration: none;
     }
   }
