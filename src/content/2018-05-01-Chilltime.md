@@ -14,10 +14,10 @@ slideImage1: https://i.imgur.com/ANlyNmy.jpg
 slideImage2: https://i.imgur.com/TasttWg.jpg
 slideImage3: https://i.imgur.com/x5JZCz3.jpg
 tags:
-  - chill
-  - stayhydrated
-  - recharge
-  - metime
+  - chill 
+  - stayhydrated 
+  - recharge 
+  - metime 
 ---
 
 ## Chill Time

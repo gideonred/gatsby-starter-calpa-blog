@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Tag = ({ name, count }) => (
-  <a href={`/tag/${name}`} className="header-tag">
-    {name}
-    &nbsp;
-    {count}
-  </a>
+  <div className="seperator">
+    <a href={`/tag/${name}`} className="header-tag">
+      {name}
+      &nbsp;
+      {count}
+      <span> &#9679; </span>
+    </a>
+  </div>
 );
 
 Tag.propTypes = {
