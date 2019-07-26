@@ -54,7 +54,9 @@ const Page = ({ pageContext, location }) => {
           </video>
           <div className="intro">
             {' '}
-Welcome to <b> Ampathy</b>
+Welcome to
+            {' '}
+            <b> Ampathy</b>
 ! You're pretty busy going from point A to point B, aren't ya?
             <br />
 Take time out. Pick a path that captures the mood you're in,
