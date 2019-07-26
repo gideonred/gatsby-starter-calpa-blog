@@ -91,7 +91,7 @@ class BlogPost extends Component {
     const { slug } = fields;
 
     const {
-      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags, walklinkembed, listenlinkembed,
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, slidecaption1, slidecaption2,slidecaption3, tags, walklinkembed, listenlinkembed,
     } = frontmatter;
 
     return (
@@ -101,6 +101,9 @@ class BlogPost extends Component {
           slideImage1={slideImage1}
           slideImage2={slideImage2}
           slideImage3={slideImage3}
+          slidecaption1={`${slidecaption1}`}
+          slidecaption2={`${slidecaption2}`}
+          slidecaption3={`${slidecaption3}`}
           title={title}
           authorName={name}
           authorImage={iconUrl}
@@ -126,11 +129,11 @@ class BlogPost extends Component {
           </div>
         </div>
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-11 content">
-        <div className="sub-title"> The Trek: </div>
+          <div className="sub-title"> The Trek: </div>
           <iframe src={`${walklinkembed}`} height="450" frameBorder="0" style={mapStyle} allowFullScreen />
         </div>
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-12 content">
-        <div className="sub-title"> The Tracks: </div>
+          <div className="sub-title"> The Tracks: </div>
           <iframe src={`${listenlinkembed}`} height="380" frameBorder="0" allowTransparency="true" allow="encrypted-media" />
         </div>
 
@@ -165,6 +168,9 @@ export const pageQuery = graphql`
       slideImage1
       slideImage2
       slideImage3
+      slidecaption1
+      slidecaption2
+      slidecaption3
       tags
     }
   }

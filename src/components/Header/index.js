@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './index.scss';
 import { Slide } from 'react-slideshow-image';
 import Tag from '../Tag';
+import slide from 'react-slideshow-image/lib/components/slideshow/slide';
 
 const properties = {
   duration: 5000,
@@ -15,21 +16,23 @@ const properties = {
   },
 };
 
-const Slideshow = ({ slideImage1, slideImage2, slideImage3 }) => (
+const Slideshow = ({ slideImage1, slideImage2, slideImage3, slidecaption1, slidecaption2, slidecaption3 }) => (
   <Slide {...properties}>
     <div className="each-slide">
       <div style={{ backgroundImage: `url(${slideImage1})` }}>
-        <span>Slide 1</span>
+        <span>{slidecaption1}</span>
       </div>
     </div>
     <div className="each-slide">
       <div style={{ backgroundImage: `url(${slideImage2})` }}>
-        <span>Slide 2</span>
+        <span>
+          { slidecaption2 }
+        </span>
       </div>
     </div>
     <div className="each-slide">
       <div style={{ backgroundImage: `url(${slideImage3})` }}>
-        <span>Slide 3</span>
+        <span>{slidecaption3}</span>
       </div>
     </div>
   </Slide>
@@ -40,6 +43,9 @@ const Header = ({
   slideImage1,
   slideImage2,
   slideImage3,
+  slidecaption1,
+  slidecaption2,
+  slidecaption3,
   title,
   subTitle,
   authorImage,
@@ -54,6 +60,9 @@ const Header = ({
         slideImage1={`${slideImage1}`}
         slideImage2={`${slideImage2}`}
         slideImage3={`${slideImage3}`}
+        slidecaption1={`${slidecaption1}`}
+        slidecaption2={`${slidecaption2}`}
+        slidecaption3={`${slidecaption3}`}
       />
     </div>
     <div className="title">
@@ -63,6 +72,7 @@ const Header = ({
       {tags.map(name => (
         <Tag name={name} key={name} />
       ))}
+      
     </div>
   </div>
 );
