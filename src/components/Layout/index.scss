@@ -28,6 +28,12 @@
 .stats {
   background: white;
   width: 100%;
+  .seperator {
+    .header-tag {
+      color: #498a94;
+      font-size: 9pt;
+    }
+  }
   .seperator:last-child {
     .header-tag {
     span {

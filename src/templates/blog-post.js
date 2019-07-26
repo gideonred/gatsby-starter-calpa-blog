@@ -91,7 +91,7 @@ class BlogPost extends Component {
     const { slug } = fields;
 
     const {
-      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags, walklinkembed, listenlinkembed
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags, walklinkembed, listenlinkembed,
     } = frontmatter;
 
     return (
@@ -112,6 +112,7 @@ class BlogPost extends Component {
           ))}
         </div>
         <div className="content">
+          <div className="sub-title2"> The Journey: </div>
           <Content post={html} />
         </div>
         <div style={footerStyle}>
@@ -124,13 +125,13 @@ class BlogPost extends Component {
             </table>
           </div>
         </div>
-
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-11 content">
-        <iframe src={`${walklinkembed}`} height="450" frameborder="0" style={mapStyle} allowfullscreen></iframe>
+        <div className="sub-title"> The Trek: </div>
+          <iframe src={`${walklinkembed}`} height="450" frameBorder="0" style={mapStyle} allowFullScreen />
         </div>
-
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-12 content">
-        <iframe src={`${listenlinkembed}`} height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div className="sub-title"> The Tracks: </div>
+          <iframe src={`${listenlinkembed}`} height="380" frameBorder="0" allowTransparency="true" allow="encrypted-media" />
         </div>
 
         <SEO
