@@ -106,25 +106,12 @@ class BlogPost extends Component {
           authorImage={iconUrl}
           subTitle={parseChineseDate(date)}
         />
-<<<<<<< HEAD
         <div className="stats">
           {tags.map(name => (
             <Tag name={name} key={name} />
           ))}
         </div>
         <div className="content">
-=======
-
-        <div className="col-sm-12 pb-4">
-          <div className="stats">
-            {tags.map(name => (
-              <Tag name={name} key={name} />
-            ))}
-          </div>
-        </div>
-
-        <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
->>>>>>> 21cc3d3c0e45bd3da151700f5b6bc2df915a3c42
           <Content post={html} />
         </div>
         <div style={footerStyle}>
