@@ -106,7 +106,9 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Header Image", name: "headerImage", widget: "string" }
       - { label: "Walk Link", name: "walklink", widget: "string" }
+      - { label: "Walk Link Embed", name: "walklinkembed", widget: "string" }
       - { label: "Listen Link", name: "listenlink", widget: "string" }
+      - { label: "Listen Link Embed", name: "listenlinkembed", widget: "string" }
       - { label: "Slide Image 1", name: "slideImage1", widget: "string" }
       - { label: "Slide Image 2", name: "slideImage2", widget: "string" }
       - { label: "Slide Image 3", name: "slideImage3", widget: "string" }

@@ -45,6 +45,7 @@ const footerStyle = {
   bottom: '0',
   height: '60px',
   width: '100%',
+  zIndex: '100',
 };
 
 const linkStyle = {
@@ -63,6 +64,10 @@ const phantomStyle = {
 
 const tableStyle = {
   width: '100%',
+};
+
+const mapStyle = {
+  border: '0',
 };
 
 class BlogPost extends Component {
@@ -86,7 +91,7 @@ class BlogPost extends Component {
     const { slug } = fields;
 
     const {
-      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags
+      date, headerImage, title, walklink, listenlink, slideImage1, slideImage2, slideImage3, tags, walklinkembed, listenlinkembed
     } = frontmatter;
 
     return (
@@ -101,13 +106,15 @@ class BlogPost extends Component {
           authorImage={iconUrl}
           subTitle={parseChineseDate(date)}
         />
+
         <div className="col-sm-12 pb-4">
-        <div className="stats">
+          <div className="stats">
             {tags.map(name => (
               <Tag name={name} key={name} />
             ))}
           </div>
-          </div>
+        </div>
+
         <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-10 content">
           <Content post={html} />
         </div>
@@ -120,6 +127,14 @@ class BlogPost extends Component {
               </tr>
             </table>
           </div>
+        </div>
+
+        <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-11 content">
+        <iframe src={`${walklinkembed}`} height="450" frameborder="0" style={mapStyle} allowfullscreen></iframe>
+        </div>
+
+        <div className="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-12 content">
+        <iframe src={`${listenlinkembed}`} height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
 
         <SEO
@@ -147,7 +162,9 @@ export const pageQuery = graphql`
       date
       headerImage
       walklink
+      walklinkembed
       listenlink
+      listenlinkembed
       slideImage1
       slideImage2
       slideImage3
